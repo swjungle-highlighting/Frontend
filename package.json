@@ -23,6 +23,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "prepare": "husky install",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -43,6 +44,13 @@
   },
   "devDependencies": {
     "husky": "^7.0.4",
+    "lint-staged": "^12.3.4",
     "prettier": "^2.5.1"
+  },
+  "lint-staged": {
+    ".src/**/*.{js,jsx,scss,css}": [
+      "prettier —write",
+      "eslint —fix"
+    ]
   }
 }
