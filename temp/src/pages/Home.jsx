@@ -35,7 +35,7 @@ export default function Home() {
       }
       if (correctLink !== "https://www.youtube.com/watch?v=") {
         alert(
-          "옳바른 유튜브 주소가 아닙니다. 옳바른 유튜브 링크 주소를 입력해 주세요1.",
+          "올바른 유튜브 주소가 아닙니다. 올바른 유튜브 링크 주소를 입력해 주세요1.",
         );
         console.log(correctLink)
         removeUrl();
@@ -44,7 +44,7 @@ export default function Home() {
       if (backAddressCheck[1].length !== 11) {
         console.log(backAddressCheck, backAddressCheck[1].length)
         alert(
-          "옳바른 유튜브 주소가 아닙니다. 옳바른 유튜브 링크 주소를 입력해 주세요2.",
+          "올바른 유튜브 주소가 아닙니다. 올바른 유튜브 링크 주소를 입력해 주세요2.",
         );
         removeUrl();
         return;
